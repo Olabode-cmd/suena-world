@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Suena World || Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Suena Website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon-suena.ico">
+
+    <!-- Css -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <!-- Main Css -->
+    <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+    <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/css/tailwind.min.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-nunito text-base text-slate-900">
+    <!-- Loader Start -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+
+    <!-- Start Navbar -->
+    <nav id="topnav" class="defaultscroll is-sticky">
+        <div class="container relative">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <span class="inline-block">
+                    <img src="assets/images/suena-dark.png" class="l-dark" height="24" alt="">
+                    <img src="assets/images/suena-light.png" class="l-light" height="24" alt="">
+                </span>
+                <img src="assets/images/suena-light.png" height="24" class="hidden" alt="">
+            </a>
+
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <!--Login button Start-->
+            <ul class="buy-button list-none mb-0">
+                <li class="inline mb-0">
+                    <a href="#">
+                        <span class="login-btn-primary"><span
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-purple-600/5 hover:bg-purple-600 border border-purple-600/10 hover:border-purple-600 text-purple-600 hover:text-white"><i
+                                    data-feather="facebook" class="size-4"></i></span></span>
+                        <span class="login-btn-light"><span
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 border hover:border-gray-100"><i
+                                    data-feather="facebook" class="size-4"></i></span></span>
+                    </a>
+                </li>
+
+                <li class="inline ps-1 mb-0">
+                    <a href="#" target="_blank">
+                        <div class="login-btn-primary"><span
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-purple-600 hover:bg-purple-700 border border-purple-600 hover:border-purple-700 text-white"><i
+                                    data-feather="instagram" class="size-4"></i></span></div>
+                        <div class="login-btn-light"><span
+                                class="size-9 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-full bg-gray-50 hover:bg-gray-200 border hover:border-gray-100"><i
+                                    data-feather="instagram" class="size-4"></i></span></div>
+                    </a>
+                </li>
+            </ul>
+            <!--Login button End-->
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu nav-light">
+                    <li><a href="index.html" class="sub-menu-item">Home</a></li>
+
+                    <li><a href="portfolio.html" class="sub-menu-item">Portfolio</a></li>
+
+                    <!-- <li><a href="#" class="sub-menu-item">Blog</a></li> -->
+
+                    <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
+
+                    <li><a href="book-appointment.html" class="sub-menu-item">Book Appointment</a></li>
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </nav><!--end header-->
+    <!-- End Navbar -->
+
+    <!-- Start Hero -->
+    <section class="relative table w-full py-36 lg:py-44 hero-bg">
+        <div class="absolute inset-0 bg-slate-900 opacity-75"></div>
+        <div class="container relative">
+            <div class="grid grid-cols-1 pb-8 text-center mt-10">
+                <h3 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Suena
+                    World – Where Dreams Meet Excellence</h3>
+
+                <p class="text-slate-300 text-lg max-w-xl mx-auto">Every experience is thoughtfully designed to inspire
+                    and delight. Let us help you create memories that last a lifetime.</p>
+            </div><!--end grid-->
+        </div><!--end container-->
+
+    </section><!--end section-->
+    <div class="relative">
+        <div class="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white">
+            <svg class="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+
+    <!-- Start Section-->
+    <section class="relative md:py-24 py-16">
+        <div class="container relative mt-16">
+            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                <div class="lg:col-span-5 md:col-span-6">
+                    <img src="assets/images/about-info.png" class="rounded-md shadow" alt="">
+                </div>
+
+                <div class="lg:col-span-7 md:col-span-6">
+                    <div class="ms-6">
+
+                        <h4 class="my-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Welcome to
+                            <span class="text-purple-600 font-bold">Suena World.</span>
+                            <!-- of experience<br> and expertise... -->
+                        </h4>
+
+
+                        <p class="text-slate-400 mb-2">At Suena World, our mission is to blend hospitality, creativity,
+                            and innovation to deliver unparalleled services tailored to your needs.</p>
+
+
+
+                        <p class="text-slate-400">Our comprehensive services include hospitality management, travel
+                            planning,
+                            event planning & execution, vendor sourcing
+                            & coordination, gifting services, business consultancy & management, spa and relaxation,
+                            short
+                            stays, and so much more
+                        </p>
+
+                        <div class="mt-4">
+                            <!-- <button class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-purple-600 hover:bg-red-500 border-purple-600 hover:border-red-500 text-white rounded-md me-2 mt-2">Book an appointment</button> -->
+                            <button
+                                class="pt-2 pb-3 px-5 font-nunito text-base rounded-lg font-semibold bg-purple-600 hover:bg-pink-600 duration-500 text-white">Book
+                                an appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--end section-->
+    <!-- End Section-->
+
+    <!-- Start -->
+    <section class="relative md:py-24 py-16 bg-gray-50">
+        <div class="container relative">
+            <div class="grid grid-cols-1 pb-8 text-center">
+                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Subsidiaries
+                </h3>
+
+                <p class="text-slate-400 max-w-xl mx-auto">
+                    At Suena World, every experience is thoughtfully designed to inspire and delight. Let us help you
+                    create memories that
+                    last a lifetime
+                </p>
+            </div><!--end grid-->
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                    <div
+                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
+                        <i class="uil uil-invoice"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Suena
+                            Events</a>
+                        <p class="text-slate-400 mt-3">Your dream events, our expertise!. Suena Events brings your
+                            vision to life, creating unforgettable celebrations tailored
+                            to your unique style and needs.</p>
+
+                        <div class="mt-5">
+                            <a href="#"
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end feature content-->
+
+                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                    <div
+                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
+                        <i class="uil uil-user"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Dream
+                            Consultancy Management</a>
+                        <p class="text-slate-400 mt-3">
+                            Empowering businesses with expert management and consultancy services, helping you navigate
+                            challenges and achieve your
+                            goals with confidence.
+                        </p>
+
+                        <div class="mt-5">
+                            <a href="#"
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end feature content-->
+
+                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                    <div
+                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
+                        <i class="uil uil-money-withdrawal"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Dream
+                            Beauty</a>
+                        <p class="text-slate-400 mt-3">
+                            Indulge in luxury with our salon, spa, and leisure services designed to rejuvenate your
+                            body, mind, and spirit.
+                        </p>
+
+                        <div class="mt-5">
+                            <a href="#"
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end feature content-->
+
+                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                    <div
+                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
+                        <i class="uil uil-truck"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Suena
+                            Travels</a>
+                        <p class="text-slate-400 mt-3">
+                            Discover the joy of seamless vacations and staycations. Suena Travels crafts personalized
+                            travel experiences for both
+                            relaxation and adventure.
+
+                        </p>
+
+                        <div class="mt-5">
+                            <a href="#"
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end feature content-->
+
+                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                    <div
+                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
+                        <i class="uil uil-ship"></i>
+                    </div>
+
+                    <div class="content mt-7">
+                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Dream
+                            Waves</a>
+                        <p class="text-slate-400 mt-3">
+                            Cruise in style or enjoy seamless boat transfers with Dream Waves, offering unforgettable
+                            journeys on the water
+                        </p>
+
+                        <div class="mt-5">
+                            <a href="#"
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                More <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end feature content-->
+            </div>
+        </div><!--end container-->
+    </section><!--end section-->
+
+    <!-- Start -->
+    <section class="relative md:py-24 pt-16 pb-6 bg-gray-50 md:pt-0 pt-0">
+        <div class="container relative z-50">
+            <div class="grid grid-cols-1 justify-center">
+                <div class="relative z-1">
+                    <div class="grid lg:grid-cols-12 grid-cols-1 md:text-start text-center justify-center">
+                        <div class="lg:col-start-2 lg:col-span-10">
+                            <div class="relative">
+                                <img src="assets/images/home-event.jpg" class="rounded-md shadow-lg" alt="">
+                                <!-- <div class="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
+                                        <a href="#!" data-type="youtube" data-id="S_CGed6E610"
+                                            class="lightbox size-20 rounded-full shadow-lg inline-flex items-center justify-center bg-white text-purple-600">
+                                            <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
+                                        </a>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content md:mt-8">
+                        <div class="grid lg:grid-cols-12 grid-cols-1 md:text-start text-center justify-center">
+                            <div class="lg:col-start-2 lg:col-span-10">
+                                <div class="grid md:grid-cols-2 grid-cols-1 items-start">
+                                    <div class="mt-8">
+                                        <div class="section-title text-md-start">
+                                            <!-- <h6 class="text-white/50 text-lg font-semibold">Vision</h6> -->
+                                            <h3
+                                                class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white mt-2">
+                                                Vision</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-8">
+                                        <div class="section-title text-md-start">
+                                            <p class="text-gray-50 font-medium max-w-xl mx-auto mb-2">To become the
+                                                leading lifestyle and hospitality brand in Sub-Saharan Africa,
+                                                celebrated for transforming everyday
+                                                moments into extraordinary experiences and setting new standards of
+                                                excellence in customer satisfaction.</p>
+                                            <!-- <a href="#" class="text-white">Read More <i class="uil uil-angle-right-b align-middle"></i></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid lg:grid-cols-12 grid-cols-1 md:text-start text-center justify-center mt-8">
+                            <div class="lg:col-start-2 lg:col-span-10">
+                                <div class="grid md:grid-cols-2 grid-cols-1 items-start">
+                                    <div class="mt-8">
+                                        <div class="section-title text-md-start">
+                                            <!-- <h6 class="text-white/50 text-lg font-semibold">Vision</h6> -->
+                                            <h3
+                                                class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white mt-2">
+                                                Mission</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-8">
+                                        <div class="section-title text-md-start">
+                                            <p class="text-gray-50 font-medium max-w-xl mx-auto mb-2">To deliver
+                                                exceptional hospitality, travel, and lifestyle services through
+                                                innovative solutions, meticulous attention to
+                                                detail, and a deep commitment to enhancing the lives of our customers.
+                                                By integrating creativity and professionalism
+                                                across all our subsidiaries, we aim to exceed expectations and build
+                                                lasting relationships with every client</p>
+                                            <!-- <a href="#" class="text-white">Read More <i class="uil uil-angle-right-b align-middle"></i></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-center mt-8">
+                            <button
+                                class='bg-white text-purple-600 text-base px-5 pt-2 pb-3 rounded-lg font-semibold'>Book
+                                an appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end row -->
+        </div><!--end container-->
+
+        <div class="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-purple-500 to-purple-600">
+        </div>
+    </section><!--end section-->
+    <!-- End -->
+
+    <!-- Start Section-->
+    <section class="relative md:py-24 py-16">
+        <div class="container relative mt-16">
+            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                <div class="lg:col-span-5 md:col-span-6">
+                    <img src="assets/images/hero-bg.jpg" class="rounded-md shadow" alt="">
+                </div>
+
+                <div class="lg:col-span-7 md:col-span-6">
+                    <div class="ms-6">
+
+                        <h4 class="my-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                            What has Suena World done?
+                        </h4>
+
+
+                        <div class="my-3 space-y-2">
+                            <p
+                                class="px-3 py-2.5 border border-gray-300 rounded-lg font-medium text-gray-600 font-nunito">
+                                Successfully organized <span class="text-purple-600 font-semibold">500+</span> wedding,
+                                parties, showers etc in
+                                Sub-saharan Africa since inception.
+                            </p>
+
+                            <p
+                                class="px-3 py-2.5 border border-gray-300 rounded-lg font-medium text-gray-600 font-nunito">
+                                Delivered <span class="text-purple-600 font-semibold">500+</span> packaged hampers
+                            </p>
+
+                            <p
+                                class="px-3 py-2.5 border border-gray-300 rounded-lg font-medium text-gray-600 font-nunito">
+                                Organized <span class="text-purple-600 font-semibold">100+</span> travels and tours
+                            </p>
+
+                            <p
+                                class="px-3 py-2.5 border border-gray-300 rounded-lg font-medium text-gray-600 font-nunito">
+                                Planned and organized convocation ceremonies in universities across Nigeria
+                            </p>
+
+                            <p
+                                class="px-3 py-2.5 border border-gray-300 rounded-lg font-medium text-gray-600 font-nunito">
+                                Carried out consultation on coorperate organizations & events in Major Companies and
+                                individuals in Sub-saharan Africa.
+                            </p>
+                        </div>
+
+
+
+                        <div class="mt-4">
+                            <!-- <button class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-purple-600 hover:bg-red-500 border-purple-600 hover:border-red-500 text-white rounded-md me-2 mt-2">Book an appointment</button> -->
+                            <button
+                                class="pt-2 pb-3 px-5 font-nunito text-base rounded-lg font-semibold bg-purple-600 hover:bg-pink-600 duration-500 text-white">Book
+                                an appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--end section-->
+    <!-- End Section-->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-slate-900 relative text-gray-200">
+        <div class="container relative">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12">
+                    <div class="py-[60px] px-0">
+                        <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                            <div class="lg:col-span-5 md:col-span-12">
+                                <a href="#" class="text-[22px] focus:outline-none">
+                                    <img src="assets/images/suena-light.png" alt="">
+                                </a>
+                                <p class="mt-6 text-gray-300 w-[85%]">We are committed to sustainable practices that contribute
+                                    positively to the environment and the communities we serve.</p>
+                                <!--end icon-->
+                            </div><!--end col-->
+
+                            <div class="lg:col-span-2 md:col-span-4">
+                                <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5>
+                                <ul class="list-none footer-list mt-6">
+                                    <li><a href="portfolio.html"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
+                                                class="uil uil-angle-right-b"></i> Portfolio</a></li>
+                                    <li class="mt-[10px]"><a href="contact.html"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
+                                                class="uil uil-angle-right-b"></i> Contact</a></li>
+                                </ul>
+                            </div><!--end col-->
+
+                            <div class="lg:col-span-3 md:col-span-4">
+                                <h5 class="tracking-[1px] text-gray-100 font-semibold">Useful Links</h5>
+                                <ul class="list-none footer-list mt-6">
+                                    <li><a href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
+                                                class="uil uil-angle-right-b"></i> Terms of Services</a></li>
+                                    <li class="mt-[10px]"><a href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out"><i
+                                                class="uil uil-angle-right-b"></i> Privacy Policy</a></li>
+                                </ul>
+                            </div><!--end col-->
+                        </div><!--end grid-->
+                    </div><!--end col-->
+                </div>
+            </div><!--end grid-->
+        </div><!--end container-->
+
+        <div class="py-[30px] px-0 border-t border-slate-800">
+            <div class="container relative text-center">
+                <div class="grid md:grid-cols-2 items-center">
+                    <div class="md:text-start text-center">
+                        <p class="mb-0">©
+                            <script>document.write(new Date().getFullYear())</script> Suena World.
+                        </p>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </div>
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top"
+        class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 size-9 text-center bg-purple-600 text-white leading-9"><i
+            class="uil uil-arrow-up"></i></a>
+    <!-- Back to top -->
+    <!-- LTR & RTL Mode Code -->
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPTS -->
+</body>
+
+<!-- Mirrored from shreethemes.in/techwind/landing/page-aboutus.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Dec 2024 13:04:06 GMT -->
+
+</html>
