@@ -115,7 +115,8 @@
         <div class="absolute inset-0 bg-slate-900 opacity-75"></div>
         <div class="container relative">
             <div class="grid grid-cols-1 pb-8 text-center mt-10">
-                <h3 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Book Appointment</h3>
+                <h3 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Book
+                    Appointment</h3>
 
                 <p class="text-slate-300 text-lg max-w-xl mx-auto">Suena World – Where Dreams Meet Excellence</p>
             </div><!--end grid-->
@@ -135,8 +136,8 @@
     <section class="relative py-16 lg:py-32">
         <div class="mx-auto w-[97%] md:w-[55%] lg:w-[45%]">
             <h1 class="text-lg lg:text-2xl font-semibold text-center">Book an Appointment</h1>
-            
-            <form action="send-email.php" method="post" class="mt-6">
+
+            <form id="appointmentForm" method="post" class="mt-6">
                 <div class="space-y-5">
                     <div>
                         <label class="font-medium text-sm md:text-base" for="name">Your Name:</label>
@@ -144,21 +145,21 @@
                             class="form-input mt-2 w-full py-2 pb-3 px-3 bg-transparent rounded-lg outline-none border border-gray-200 focus:border-indigo-600 focus:ring-0"
                             placeholder="e.g., John Doe" required>
                     </div>
-            
+
                     <div>
                         <label class="font-medium text-sm md:text-base" for="phone">Phone number:</label>
                         <input type="text" name="phone" id="phone"
                             class="form-input mt-2 w-full py-2 pb-3 px-3 bg-transparent rounded-lg outline-none border border-gray-200 focus:border-indigo-600 focus:ring-0"
                             placeholder="555 5555 555" required>
                     </div>
-            
+
                     <div>
                         <label class="font-medium text-sm md:text-base" for="email">Email:</label>
                         <input type="email" name="email" id="email"
                             class="form-input mt-2 w-full py-2 pb-3 px-3 bg-transparent rounded-lg outline-none border border-gray-200 focus:border-indigo-600 focus:ring-0"
                             placeholder="e.g., johndoe@gmail.com" required>
                     </div>
-            
+
                     <div>
                         <h6 class="font-medium mb-2">Preferred contact method:</h6>
                         <label class="inline-flex items-center">
@@ -170,7 +171,7 @@
                             <span class="text-slate-400 ml-2">Email</span>
                         </label>
                     </div>
-            
+
                     <div>
                         <label class="font-medium text-sm md:text-base" for="service">What service do you need?</label>
                         <select name="service" id="service"
@@ -184,33 +185,43 @@
                             <option value="Dream Consultancy Management">Dream Consultancy Management</option>
                         </select>
                     </div>
-            
+
                     <div>
-                        <label class="font-medium text-sm md:text-base" for="location">From what location would you love to order
+                        <label class="font-medium text-sm md:text-base" for="location">From what location would you love
+                            to order
                             this?</label>
                         <select name="location" id="location"
                             class="form-input mt-2 w-full py-2 pb-3 px-3 bg-transparent rounded-lg outline-none border border-gray-200 focus:border-indigo-600 focus:ring-0"
                             required>
                             <option value="" selected disabled>Select your option</option>
                             <option value="Lagos">Lagos</option>
-                            <option value="Outside Lagos (Neighboring States)">Outside Lagos (Neighboring States)</option>
+                            <option value="Outside Lagos (Neighboring States)">Outside Lagos (Neighboring States)
+                            </option>
                             <option value="Nigeria">Nigeria</option>
                             <option value="Outside Nigeria">Outside Nigeria</option>
                         </select>
                     </div>
-            
+
                     <div>
-                        <label class="font-medium text-sm md:text-base" for="comments">Any questions or comments?</label>
+                        <label class="font-medium text-sm md:text-base" for="comments">Any questions or
+                            comments?</label>
                         <textarea name="comments" id="comments"
                             class="form-input h-[145px] resize-none mt-2 w-full py-2 pb-3 px-3 bg-transparent rounded-lg outline-none border border-gray-200 focus:border-indigo-600 focus:ring-0"
                             placeholder="Put your notes here"></textarea>
                     </div>
                 </div>
-            
+
                 <div class="mt-4">
-                    <button type="submit"
-                        class="uppercase font-semibold text-sm bg-purple-600 hover:bg-purple-700 duration-150 rounded-full text-white w-full px-3 py-3">Book
-                        Appointment</button>
+                    <button type="submit" id="submitButton"
+                        class="uppercase font-semibold text-sm bg-purple-600 hover:bg-purple-700 duration-150 rounded-full text-white w-full px-3 py-3 flex items-center justify-center">
+                        <span id="buttonText">Book Appointment</span>
+                        <svg id="loader" class="hidden animate-spin ml-2 h-5 w-5 text-white"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                            </circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                        </svg>
+                    </button>
                 </div>
             </form>
 
@@ -291,6 +302,52 @@
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/plugins.init.js"></script>
     <script src="assets/js/app.js"></script>
+
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const submitButton = document.getElementById('submitButton');
+            const buttonText = document.getElementById('buttonText');
+            const loader = document.getElementById('loader');
+
+            // Show loader and disable button
+            buttonText.textContent = 'Sending...';
+            loader.classList.remove('hidden');
+            submitButton.disabled = true;
+
+            // Collect form data
+            const formData = new FormData(this);
+
+            // Submit the form via AJAX
+            fetch('send-email.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.text()) // Handle response as plain text
+                .then(result => {
+                    // Show an alert with the server's response
+                    alert(result);
+
+                    // Reset form and button state
+                    this.reset();
+                    buttonText.textContent = 'Book Appointment';
+                    loader.classList.add('hidden');
+                    submitButton.disabled = false;
+                })
+                .catch(error => {
+                    // Show an alert for errors
+                    alert('An error occurred: ' + error.message);
+
+                    // Reset button state
+                    buttonText.textContent = 'Book Appointment';
+                    loader.classList.add('hidden');
+                    submitButton.disabled = false;
+                });
+        });
+    </script>
+
+
     <!-- JAVASCRIPTS -->
 </body>
 

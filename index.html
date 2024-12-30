@@ -19,8 +19,10 @@
     <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
     <!-- <link rel="stylesheet" href="assets/css/tailwind.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </head>
 
@@ -113,11 +115,12 @@
     <section class="relative table w-full py-36 lg:py-44 hero-bg">
         <div class="absolute inset-0 bg-slate-900 opacity-75"></div>
         <div class="container relative">
-            <div class="grid grid-cols-1 pb-8 text-center mt-10">
+            <div data-aos="fade-up" class="grid grid-cols-1 pb-8 text-center mt-10">
                 <h3 class="mb-6 md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Suena
                     World – Where Dreams Meet Excellence</h3>
 
-                <p class="text-slate-300 text-sm md:text-lg max-w-xl mx-auto font-light">Every experience is thoughtfully designed to inspire
+                <p class="text-slate-300 text-sm md:text-lg max-w-xl mx-auto font-light">Every experience is
+                    thoughtfully designed to inspire
                     and delight. Let us help you create memories that last a lifetime.</p>
             </div><!--end grid-->
         </div><!--end container-->
@@ -133,16 +136,33 @@
     </div>
     <!-- End Hero -->
 
+    <div class="py-8 px-4 md:px-32 lg:px-40" data-aos="fade-up">
+        <h3 class="text-lg md:text-2xl font-semibold text-center">Clients</h3>
+        <div class="pt-5 flex items-center justify-around">
+            <a href="https://www.instagram.com/kingfisher.africa/" target="_blank">
+                <img src="assets/images/new/kingfisher.png" alt="kingfisher" class="w-[70px] md:w-[130px]">
+            </a>
+        
+            <a href="https://eyekandyng.com/" target="_blank">
+                <img src="assets/images/new/eyekandy-logo.png" alt="eyekandy-logo.png" class="w-[70px] md:w-[130px]">
+            </a>
+        
+            <a href="https://www.instagram.com/pgvluxuryhair/" target="_blank">
+                <img src="assets/images/new/pgvlogo.jpg" alt="pgvlogo.jpg" class="w-[70px] md:w-[130px]">
+            </a>
+        </div>
+    </div>
+
 
     <!-- Start Section-->
-    <section class="relative md:py-24 py-16">
+    <section class="relative md:pt-8 md:pb-20 pt-10 pb-16">
         <div class="container relative mt-16">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-                <div class="lg:col-span-5 md:col-span-6">
+                <div class="lg:col-span-5 md:col-span-6" data-aos="fade-up" data-aos-delay='300'>
                     <img src="assets/images/about-info.png" class="rounded-md shadow" alt="">
                 </div>
 
-                <div class="lg:col-span-7 md:col-span-6">
+                <div class="lg:col-span-7 md:col-span-6" data-aos="fade-up">
                     <div>
                         <h4 class="my-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Welcome to
                             <span class="text-purple-600 font-bold">Suena World.</span>
@@ -150,12 +170,14 @@
                         </h4>
 
 
-                        <p class="text-slate-400 mb-2 font-light">At Suena World, our mission is to blend hospitality, creativity,
+                        <p class="text-slate-400 mb-2 font-light">At Suena World, our mission is to blend hospitality,
+                            creativity,
                             and innovation to deliver unparalleled services tailored to your needs.</p>
 
 
 
-                        <p class="text-slate-400 font-light">Our comprehensive services include hospitality management, travel
+                        <p class="text-slate-400 font-light">Our comprehensive services include hospitality management,
+                            travel
                             planning,
                             event planning & execution, vendor sourcing
                             & coordination, gifting services, business consultancy & management, spa and relaxation,
@@ -165,9 +187,9 @@
 
                         <div class="mt-4">
                             <!-- <button class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-purple-600 hover:bg-red-500 border-purple-600 hover:border-red-500 text-white rounded-md me-2 mt-2">Book an appointment</button> -->
-                            <button
-                                class="py-2 px-5 font-nunito text-base rounded-lg font-semibold bg-purple-600 hover:bg-pink-600 duration-500 text-white">Book
-                                an appointment</button>
+                            <a href="book-appointment.html"
+                                class="py-2.5 px-5 text-base rounded-lg font-medium bg-purple-600 hover:bg-pink-600 duration-500 text-white">Book
+                                an appointment</a>
                         </div>
                     </div>
                 </div>
@@ -180,10 +202,11 @@
     <section class="relative md:py-24 py-16 bg-gray-50">
         <div class="container relative">
             <div class="grid grid-cols-1 pb-8 text-center">
-                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Subsidiaries
+                <h3 data-aos="fade-up" class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
+                    Our Subsidiaries
                 </h3>
 
-                <p class="text-slate-400 max-w-xl mx-auto">
+                <p data-aos="fade-up" class="text-slate-400 max-w-xl mx-auto">
                     At Suena World, every experience is thoughtfully designed to inspire and delight. Let us help you
                     create memories that
                     last a lifetime
@@ -191,38 +214,41 @@
             </div><!--end grid-->
 
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                <div data-aos="fade-up" class="group p-6 rounded-lg bg-white hover:bg-purple-600 duration-500">
                     <div
-                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
-                        <i class="uil uil-invoice"></i>
+                        class="size-16 flex align-middle justify-center items-center shadow-sm duration-500">
+                        <!-- <i class="uil uil-invoice"></i> -->
+                         <img src="assets/images/suena-logo.png" alt="logo suena" class="rounded-lg">
                     </div>
 
                     <div class="content mt-7">
-                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Suena
+                        <a href="#" class="title h5 text-lg font-medium group-hover:text-white">Suena
                             Events</a>
-                        <p class="text-slate-400 mt-3 font-light">Your dream events, our expertise!. Suena Events brings your
+                        <p class="text-slate-400 mt-3 font-light group-hover:text-white">Your dream events, our expertise!. Suena Events brings
+                            your
                             vision to life, creating unforgettable celebrations tailored
                             to your unique style and needs.</p>
 
                         <div class="mt-5">
-                            <a href="#"
-                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                            <a href="https://www.facebook.com/share/1PwDzDh9Wm/?mibextid=wwXIfr" target="_blank"
+                                class="relative inline-block font-semibold group-hover:text-white tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
                                 More <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <!--end feature content-->
 
-                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                <div data-aos="fade-up" data-aos-delay='300'
+                    class="group p-6 rounded-lg shadow bg-white hover:bg-purple-600 duration-500">
                     <div
-                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
-                        <i class="uil uil-user"></i>
+                        class="size-16 flex align-middle justify-center items-center duration-500">
+                        <img src="assets/images/new/dream-consultancy.jpeg" alt="consultancy" class="rounded-lg">
                     </div>
 
                     <div class="content mt-7">
-                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Dream
+                        <a href="#" class="title h5 text-lg font-medium group-hover:text-white">Dream
                             Consultancy Management</a>
-                        <p class="text-slate-400 mt-3 font-light">
+                        <p class="text-slate-400 mt-3 font-light group-hover:text-white">
                             Empowering businesses with expert management and consultancy services, helping you navigate
                             challenges and achieve your
                             goals with confidence.
@@ -230,46 +256,49 @@
 
                         <div class="mt-5">
                             <a href="#"
-                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 group-hover:text-white ease-in-out">Read
                                 More <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <!--end feature content-->
 
-                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                <div data-aos="fade-up" data-aos-delay='500'
+                    class="group p-6 rounded-lg shadow bg-white hover:bg-purple-600 duration-500">
                     <div
-                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
-                        <i class="uil uil-money-withdrawal"></i>
+                        class="size-16 flex align-middle justify-center items-center duration-500">
+                        <!-- <i class="uil uil-money-withdrawal"></i> -->
+                         <img src="assets/images/new/dream-beauty.jpeg" alt="dream beauty" class="rounded-lg">
                     </div>
 
                     <div class="content mt-7">
-                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Dream
+                        <a href="#" class="title h5 text-lg font-medium group-hover:text-white">Dream
                             Beauty</a>
-                        <p class="text-slate-400 mt-3 font-light">
+                        <p class="text-slate-400 mt-3 font-light group-hover:text-white">
                             Indulge in luxury with our salon, spa, and leisure services designed to rejuvenate your
                             body, mind, and spirit.
                         </p>
 
                         <div class="mt-5">
-                            <a href="#"
-                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                            <a href="https://www.facebook.com/share/1DvUgQggYy/?mibextid=wwXIfr" target="_blank"
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 group-hover:text-white duration-500 ease-in-out">Read
                                 More <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <!--end feature content-->
 
-                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                <div data-aos="fade-up" class="group p-6 rounded-lg bg-white hover:bg-purple-600 duration-500">
                     <div
                         class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
-                        <i class="uil uil-truck"></i>
+                        <!-- <i class="uil uil-truck"></i> -->
+                         <img src="assets/images/suena-logo.png" alt="suena logo" class="rounded-lg">
                     </div>
 
                     <div class="content mt-7">
-                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Suena
+                        <a href="#" class="title h5 text-lg font-medium group-hover:text-white">Suena
                             Travels</a>
-                        <p class="text-slate-400 mt-3 font-light">
+                        <p class="text-slate-400 mt-3 font-light group-hover:text-white">
                             Discover the joy of seamless vacations and staycations. Suena Travels crafts personalized
                             travel experiences for both
                             relaxation and adventure.
@@ -278,30 +307,32 @@
 
                         <div class="mt-5">
                             <a href="#"
-                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                class="relative inline-block group-hover:text-white font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
                                 More <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <!--end feature content-->
 
-                <div class="group p-6 rounded-lg shadow hover:-translate-y-2 duration-500">
+                <div data-aos="fade-up" data-aos-delay='300'
+                    class="group p-6 rounded-lg bg-white hover:bg-purple-600 shadow duration-150">
                     <div
-                        class="size-16 bg-purple-600/5 group-hover:bg-purple-600 group-hover:text-white border-2 border-purple-600/20 text-purple-600 rounded-lg text-2xl flex align-middle justify-center items-center shadow-sm duration-500">
-                        <i class="uil uil-ship"></i>
+                        class="size-16 flex align-middle justify-center items-center shadow-sm duration-500">
+                        <!-- <i class="uil uil-ship"></i> -->
+                         <img src="assets/images/new/dream-waves.jpeg" alt="dream waves" class="rounded-lg">
                     </div>
 
                     <div class="content mt-7">
-                        <a href="page-services.html" class="title h5 text-lg font-medium hover:text-purple-600">Dream
+                        <a href="#" class="title h5 text-lg font-medium group-hover:text-white">Dream
                             Waves</a>
-                        <p class="text-slate-400 mt-3 font-light">
+                        <p class="text-slate-400 mt-3 font-light group-hover:text-white">
                             Cruise in style or enjoy seamless boat transfers with Dream Waves, offering unforgettable
                             journeys on the water
                         </p>
 
                         <div class="mt-5">
                             <a href="#"
-                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 ease-in-out">Read
+                                class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-purple-600 hover:text-purple-600 after:bg-purple-600 duration-500 group-hover:text-white ease-in-out">Read
                                 More <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
@@ -317,7 +348,7 @@
             <div class="grid grid-cols-1 justify-center">
                 <div class="relative z-1">
                     <div class="grid lg:grid-cols-12 grid-cols-1 md:text-start text-center justify-center">
-                        <div class="lg:col-start-2 lg:col-span-10">
+                        <div class="lg:col-start-2 lg:col-span-10" data-aos="fade-up">
                             <div class="relative">
                                 <img src="assets/images/home-event.jpg" class="rounded-md shadow-lg" alt="">
                                 <!-- <div class="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
@@ -336,13 +367,13 @@
                                     <div class="mt-8">
                                         <div class="section-title text-md-start">
                                             <!-- <h6 class="text-white/50 text-lg font-semibold">Vision</h6> -->
-                                            <h3
+                                            <h3 data-aos="fade-up"
                                                 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white mt-2">
                                                 Vision</h3>
                                         </div>
                                     </div>
 
-                                    <div class="mt-8">
+                                    <div class="mt-8" data-aos="fade-up">
                                         <div class="section-title text-md-start">
                                             <p class="text-gray-50 font-medium max-w-xl mx-auto mb-2">To become the
                                                 leading lifestyle and hospitality brand in Sub-Saharan Africa,
@@ -359,7 +390,7 @@
                         <div class="grid lg:grid-cols-12 grid-cols-1 md:text-start text-center justify-center mt-8">
                             <div class="lg:col-start-2 lg:col-span-10">
                                 <div class="grid md:grid-cols-2 grid-cols-1 items-start">
-                                    <div class="mt-8">
+                                    <div class="mt-8" data-aos="fade-up">
                                         <div class="section-title text-md-start">
                                             <!-- <h6 class="text-white/50 text-lg font-semibold">Vision</h6> -->
                                             <h3
@@ -368,7 +399,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="mt-8">
+                                    <div class="mt-8" data-aos="fade-up">
                                         <div class="section-title text-md-start">
                                             <p class="text-gray-50 font-medium max-w-xl mx-auto mb-2">To deliver
                                                 exceptional hospitality, travel, and lifestyle services through
@@ -384,10 +415,10 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center justify-center mt-8">
-                            <button
-                                class='bg-white text-purple-600 text-base px-5 py-2 rounded-lg font-semibold'>Book
-                                an appointment</button>
+                        <div class="flex items-center justify-center mt-8" data-aos="fade-up">
+                            <a href='book-appointment.html'
+                                class='bg-white text-purple-600 text-base px-5 py-2.5 rounded-lg font-medium'>Book
+                                an appointment</a>
                         </div>
                     </div>
                 </div>
@@ -399,23 +430,179 @@
     </section><!--end section-->
     <!-- End -->
 
-    <!-- Start Section-->
     <section class="relative md:py-24 py-16">
+        <div class="container relative">
+            <div class="grid grid-cols-1 pb-8 text-center" data-aos="fade-up">
+                <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Key Values of Suena World Limited</h3>
+                <p class="text-slate-400 max-w-xl mx-auto">We seek to INSPIRE</p>
+            </div><!--end grid-->
+        
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+                <div data-aos="fade-up"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-chart-line"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Integrity</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            Transparency, honesty, and ethical practices are at the core of everything we do.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+        
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-crosshairs"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Innovation</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            We embrace creativity and leverage cutting-edge solutions to deliver exceptional results.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+        
+                <div data-aos="fade-up" data-aos-delay="400"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-airplay"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Customer Excellence</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            Our clients’ satisfaction is our priority, and we strive to exceed their expectations consistently.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+        
+                <div data-aos="fade-up" data-aos-delay="500"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-rocket"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Sustainability</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            We are committed to practices that support environmental, social, and economic well-being.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+        
+                <div data-aos="fade-up"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-clock"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Adaptability</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            We stay agile and responsive to changes in the market and client needs.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+        
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-users-alt"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Partnership</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            We foster strong partnerships and teamwork to achieve shared success.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+        
+                <div data-aos="fade-up" data-aos-delay="400"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-file-alt"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Empowerment</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            We empower individuals and businesses to unlock their full potential.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+        
+                <div data-aos="fade-up" data-aos-delay="500"
+                    class="group relative p-6 shadow hover:shadow-md hover:bg-purple-600 duration-500 rounded-xl bg-white overflow-hidden text-center">
+                    <div class="relative overflow-hidden text-transparent -m-3">
+                        <i data-feather="hexagon" class="size-24 fill-purple-600/5 group-hover:fill-white/10 mx-auto"></i>
+                        <div
+                            class="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-purple-600 rounded-xl group-hover:text-white duration-500 text-3xl flex align-middle justify-center items-center">
+                            <i class="uil uil-search"></i>
+                        </div>
+                    </div>
+        
+                    <div class="mt-6">
+                        <a href="#" class="text-lg font-medium group-hover:text-white duration-500">Reliability</a>
+                        <p class="text-slate-400 group-hover:text-gray-50 duration-500 mt-3">
+                            We ensure consistent delivery of high-quality services and solutions.
+                        </p>
+                    </div>
+                </div><!--end feature-->
+            </div>
+        </div><!--end container-->
+    </section>
+
+    <!-- Start Section-->
+    <section class="relative md:pb-24 pb-16">
         <div class="container relative mt-16">
             <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
-                <div class="lg:col-span-5 md:col-span-6">
+                <div class="lg:col-span-5 md:col-span-6" data-aos="fade-up" data-aos-delay='300'>
                     <img src="assets/images/hero-bg.jpg" class="rounded-md shadow" alt="">
                 </div>
 
                 <div class="lg:col-span-7 md:col-span-6">
                     <div>
 
-                        <h4 class="my-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
+                        <h4 data-aos="fade-up"
+                            class="my-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
                             What has Suena World done?
                         </h4>
 
 
-                        <div class="my-3 space-y-2 mx-auto">
+                        <div class="my-3 space-y-2 mx-auto" data-aos="fade-up">
                             <p
                                 class="px-3 py-2.5 border border-gray-300 rounded-lg font-light text-gray-600 font-nunito">
                                 Successfully organized <span class="text-purple-600 font-semibold">500+</span> wedding,
@@ -447,11 +634,11 @@
 
 
 
-                        <div class="mt-4">
+                        <div class="mt-4" data-aos="fade-up">
                             <!-- <button class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-purple-600 hover:bg-red-500 border-purple-600 hover:border-red-500 text-white rounded-md me-2 mt-2">Book an appointment</button> -->
-                            <button
-                                class="py-2 px-5 font-nunito text-base rounded-lg font-semibold bg-purple-600 hover:bg-pink-600 duration-500 text-white">Book
-                                an appointment</button>
+                            <a href="book-appointment.html"
+                                class="py-2.5 px-5 font-nunito text-base rounded-lg font-medium bg-purple-600 hover:bg-pink-600 duration-500 text-white">Book
+                                an appointment</a>
                         </div>
                     </div>
                 </div>
@@ -459,6 +646,104 @@
         </div>
     </section><!--end section-->
     <!-- End Section-->
+
+    <!-- Start Section-->
+    <section class="relative md:py-24 py-16 bg-gray-50">
+        <div class="container relative">
+            <h1 class="text-2xl font-semibold text-center mb-6">Testimonials</h1>
+            <div class="grid grid-cols-1 items-center gap-[30px]">
+                <div class="filters-group-wrap text-center">
+                    <div class="filters-group">
+                        <ul class="mb-0 list-none container-filter-border-bottom filter-options space-x-4">
+                            <li class="inline-block text-lg font-semibold mb-3 cursor-pointer relative border-b border-transparent text-slate-400 duration-500 active"
+                                data-group="all">All</li>
+                            <li class="inline-block text-md font-semibold mb-3 cursor-pointer relative border-b border-transparent text-slate-400 duration-500"
+                                data-group="events">Suena Events</li>
+                            <li class="inline-block text-md font-semibold mb-3 cursor-pointer relative border-b border-transparent text-slate-400 duration-500"
+                                data-group="travels">Suena Travels</li>
+                            <li class="inline-block text-md font-semibold mb-3 cursor-pointer relative border-b border-transparent text-slate-400 duration-500"
+                                data-group="beauty">Dream Beauty</li>
+                            <li class="inline-block text-md font-semibold mb-3 cursor-pointer relative border-b border-transparent text-slate-400 duration-500"
+                                data-group="waves">Dream Waves</li>
+
+                            <li class="inline-block text-md font-semibold mb-3 cursor-pointer relative border-b border-transparent text-slate-400 duration-500"
+                                data-group="consultancy">Dream Consultancy Mgt.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--grid-->
+    
+            <div id="grid" class="md:flex justify-center mx-auto mt-4">
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["events"]'>
+                    <div class="bg-white px-3 py-4 border border-gray-300 rounded-lg">
+                        <p class="text-md font-medium mb-4 text-gray-600">
+                            "The team at Suena Events made our special day unforgettable. Their attention to detail and creativity
+                            were unmatched!"
+                        </p>
+                        <p class="text-slate-900 font-semibold">Mary Jane</p>
+                        <p class="bg-green-100 text-green-600 text-xs font-medium px-2 py-1 rounded-md inline-block">Suena Events
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["travels"]'>
+                    <div class="bg-white px-3 py-4 border border-gray-300 rounded-lg">
+                        <p class="text-md font-medium mb-4 text-gray-600">
+                            "Our trip was seamless and full of amazing experiences thanks to their expert planning. Highly
+                            recommend!"
+                        </p>
+                        <p class="text-slate-900 font-semibold">John Doe</p>
+                        <p class="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1 rounded-md inline-block">Suena Travels
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["beauty"]'>
+                    <div class="bg-white px-3 py-4 border border-gray-300 rounded-lg">
+                        <p class="text-md font-medium mb-4 text-gray-600">
+                            "The beauty treatments were luxurious, and the results exceeded my expectations. I feel amazing!"
+                        </p>
+                        <p class="text-slate-900 font-semibold">Sarah Thompson</p>
+                        <p class="bg-pink-100 text-pink-600 text-xs font-medium px-2 py-1 rounded-md inline-block">Dream Beauty</p>
+                    </div>
+                </div>
+            
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["waves"]'>
+                    <div class="bg-white px-3 py-4 border border-gray-300 rounded-lg">
+                        <p class="text-md font-medium mb-4 text-gray-600">
+                            "Catching the perfect waves with their guidance was a dream come true. Excellent service and local
+                            knowledge!"
+                        </p>
+                        <p class="text-slate-900 font-semibold">Mike Johnson</p>
+                        <p class="bg-teal-100 text-teal-600 text-xs font-medium px-2 py-1 rounded-md inline-block">Dream Wave</p>
+                    </div>
+                </div>
+            
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["consultancy"]'>
+                    <div class="bg-white px-3 py-4 border border-gray-300 rounded-lg">
+                        <p class="text-md font-medium mb-4 text-gray-600">
+                            "Their insights helped us streamline our business and achieve our goals faster than expected!"
+                        </p>
+                        <p class="text-slate-900 font-semibold">Emma Davis</p>
+                        <p class="bg-purple-100 text-purple-600 text-xs font-medium px-2 py-1 rounded-md inline-block">Dream
+                            Consultancy Mgt</p>
+                    </div>
+                </div>
+            
+                <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["events"]'>
+                    <div class="bg-white px-3 py-4 border border-gray-300 rounded-lg">
+                        <p class="text-md font-medium mb-4 text-gray-600">
+                            "Our corporate gala was a resounding success. The team managed everything flawlessly!"
+                        </p>
+                        <p class="text-slate-900 font-semibold">Lucas Harper</p>
+                        <p class="bg-green-100 text-green-600 text-xs font-medium px-2 py-1 rounded-md inline-block">Suena Events
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--end container-->
+    </section><!--end section-->
 
     <!-- Footer Start -->
     <footer class="footer bg-slate-900 relative text-gray-200">
@@ -471,7 +756,8 @@
                                 <a href="#" class="text-[22px] focus:outline-none">
                                     <img src="assets/images/suena-light.png" alt="">
                                 </a>
-                                <p class="mt-6 text-gray-300 w-[85%]">We are committed to sustainable practices that contribute
+                                <p class="mt-6 text-gray-300 w-[85%]">We are committed to sustainable practices that
+                                    contribute
                                     positively to the environment and the communities we serve.</p>
                                 <!--end icon-->
                             </div><!--end col-->
@@ -532,9 +818,15 @@
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/plugins.init.js"></script>
     <script src="assets/js/app.js"></script>
+
+    <script src="assets/libs/shufflejs/shuffle.min.js"></script>
+    <script src="assets/libs/jarallax/jarallax.min.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 500
+        });
+    </script>
     <!-- JAVASCRIPTS -->
 </body>
-
-<!-- Mirrored from shreethemes.in/techwind/landing/page-aboutus.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Dec 2024 13:04:06 GMT -->
-
 </html>
